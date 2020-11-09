@@ -1,0 +1,4 @@
+id,type,name,ppu,batters_batter_0_id,batters_batter_0_type,batters_batter_1_id,batters_batter_1_type,batters_batter_2_id,batters_batter_2_type,topping_0_id,topping_0_type,topping_1_id,topping_1_type,topping_2_id,topping_2_type,topping_3_id,topping_3_type,topping_4_id,topping_4_type,topping_5_id,topping_5_type,topping_6_id,topping_6_type
+0001,donut,Cake,0.55,1001,Regular,1002,Chocolate,1003,Blueberry,5001,None,5002,Glazed,5005,Sugar,5007,Powdered Sugar,5006,Chocolate with Sprinkles,5003,Chocolate,5004,Maple
+0002,donut,Raised,0.55,1001,Regular,-11,-11,-11,-11,5001,None,5002,Glazed,5005,Sugar,5003,Chocolate,5004,Maple,-11,-11,-11,-11
+0003,donut,Old Fashioned,0.55,1001,Regular,1002,Chocolate,-11,-11,5001,None,5002,Glazed,5003,Chocolate,5004,Maple,-11,-11,-11,-11,-11,-11

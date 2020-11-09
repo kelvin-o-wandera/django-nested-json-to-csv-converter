@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container py-5">
+    <!-- For demo purpose -->
+    <header class="text-white text-center">
+        <h1 class="display-4">Generate csv from nested json array</h1>
+        <p class="lead mb-0" style="color: black; font-weight: bold;">No information is saved in the database about the json uploaded</p>
+        <p class="mb-5 font-weight-light">Only JSON array objects supported</p>
+        <button class="btn btn-primary btn-sm" onclick="window.location='{% url 'sample_json' %}'">Download Sample Json</button>
+    </header>
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+            <!-- Upload image input-->
+            <form id="form-upload" method="post" enctype="multipart/form-data" action="{% url 'index' %}">{% csrf_token %}
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <input id="upload" type="file" name="file" class="form-control border-0">
+                <label id="upload-label" for="upload" class="font-weight-light text-muted">Select json file</label>
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">upload json file</small></label>
+                </div>
+            </div>
+            <div class="form-group">
+               <label for="exampleFormControlTextarea1">Generated csv link will appear below once generated</label>
+               <p class="form-control" id="controlTextarea" ></p>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
